@@ -1,0 +1,48 @@
+<section>
+	<h3 id="experiment">Experiments</h3>
+	<p>We did experiments using DSLR camera and iPhone camera on single-view environment matting, see Sec Sec. ??. To approach multi-view environment matting, we did experiments with iPhone video (Sec. ??), Lytro-Illum camera (Sec. ??), and interpolated unseen perspectives between two views captured by DSLR camera.</p>
+
+	<h4>Single-View Environment Matting</h4>
+	<p>
+		Fig. ?? shows results from DSLR camera compared with ground truth photo. 
+		Because we used single-image environment matting, we can render a new video with arbitrary background by generating environment matting frame-by-frame. In fig.??, we poured water into the glass cup and recorded using iPhone in a) and then we rendered the video in b) frame-by-frame. It looks realistic.
+	</p>
+	<figure class="centered_full">
+			<img src="images/experiments/DSLR-result1.png" alt=""  class="img2" />
+			<img src="images/experiments/DSLR-result2.png" alt="" class="img2" />
+	</figure>
+	<figure class="centered_full">
+		<video controls height=450>
+		 	a)
+		  <source  src="videos/water_pouring_input.mov" >
+		</video>
+		<video  controls>
+			b)
+		  <source src="videos/water_pouring_noPostP.mp4" type="video/mp4">
+		  <source src="videos/water_pouring_noPostP.mov" >
+		  <source src="videos/water_pouring_noPostP.avi" type="video/avi">
+		</video>
+	</figure>
+	
+
+	<h5>Multi-view Environment Matting</h5>
+	<p>
+		Our initial goal for multi-view environment matting is 1) to have a hand-held camera recording a video while moving freely. And then 2) we calibrate the camera positions. And finally, based on the camera positions and views we captured, we can 3) interpolate unseen perspectives. However, each of the three components turned out to be complicated. We shall examine them one by one in the sequel.
+	</p>
+	
+	<h6>Hand-held Camera</h6>
+	<p>
+		Fig. ??a) shows a video recored using iPhone and we rendered b) frame-by-frame. Although it looks not bad, it has obvious wobbling effect and is not temporal consistent enough. Part of the reasons are
+		1) obvious rolling camera effect in the input video,
+		2) auto mode in video capturing which implies the exposure settings would possibly change during the capture. And we did notice the color change in the background.
+		3) poor color quality (the red color on the lefttop of the background patterns looks orangish in the video).
+		And therefore, even frame-by-frame rendering of seen perspectives is not as easy as we expected.
+	</p>
+
+	<h6>Camera Position Calibration</h6>
+	<p>
+		To calibrate camera positions, we tried Lytro-Illum camera, see Appendix A and Structure from Motion, see Appendix B.
+	</p>
+
+	<h6>View Interpolation</h6>
+</section>

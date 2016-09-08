@@ -1,0 +1,16 @@
+<section>
+	<h3>Introduction</h3>
+	<p>
+		<figure>
+			<img src="images/intro/green_screen.png" alt="" height=150 style="float:right"/>
+		</figure>
+		Matting and compositing are fundamental in graphics. They are often used in film industry where an actor stands in fron of a green screen and the background is then replaced into another environment, as is shown in fig. ??. In the matting process, the foreground object of arbitrary shape is extracted from a background image. And the matte extracted is the opacity of each pixel on the foreground. In the compositing process, the background is replaced by adding up the foreground and the new background weighted according to the matte.
+
+	</p>
+	
+	<p>
+		Although matting and compositing have proven very useful in film industry, they fail to simulate reflection and refraction effect. Especially when the object is translucent or glossy, refraction and refraction is further coupled with various light scattering effects. Light attenation and scattering of light according to wavelength will further complicate the problem. 
+	</p>
+	<p>
+		Environment matting, by Douglas et al. [1] in 2000, aims at generalizing the traditional matting and compositing process to incorperate all of these effects. However, they only solved the single-view environment matting problem, where we want the object to look realistic from a single perspective. If we want to make a reflective/refractive object in a virtual scene look realistic from different perspectives to interact with it, we need to solve the multi-view environment matting. Since it is impractical to scan the object from all possible perspectives, we want to interpolate environemnt matting of unseen perspectives based on the environment matting of captured views. We will review the single-view environment matting by Douglas et al. [1],  describe our interpolation method in Sec. ??, and show the experiment results in Sec. ??. Because calibrating camera position helps to render environment matting for a given perspective, we tried Lytro-Illum camera and structure from motion as introduced in Appendix A and B. These trial didn't turn out to be successful but we learned lessons from these experiment.
+</section>

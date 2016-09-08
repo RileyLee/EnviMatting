@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	TXT by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Multi-view Environment Matting</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<div class="logo container">
+						<div>
+							<h1><a href="index.html" id="logo">Multi-view</a></h1>
+							<p>Environment Matting</p>
+						</div>
+					</div>
+				</header>
+
+			<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="index.html">Results</a></li>
+						<li><a href="EnviMatting.html">Home Page</a></li>
+					</ul>
+				</nav>
+
+			<!-- Banner -->
+				<!-- <div id="banner-wrapper">
+					<section id="banner">
+						<h2>Welcome to TXT by HTML5 UP</h2>
+						<p>A free responsive site template built on HTML5, CSS3, skel, and some other stuff</p>
+						<a href="#" class="button">Alright let's go</a>
+					</section>
+				</div>
+ -->
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div id="main" class="container">
+						<div class="row 200%">
+							<div class="12u">
+								<!-- videos -->
+									<section class="box features">
+										<h2 class="major"><span>Video</span></h2>
+										<div>
+											<h3>Horizontal Interpolation: </h3>
+											<div class="row">
+												<div class="9u 12u(mobile)">
+													<video  controls class="centered_half_large">
+													  <source src="videos/InterpH_Gopro3.mov" >
+													</video>
+												</div>
+												<div class="3u 12u(mobile)">
+													<h5>Input Views:</h5>
+													<figure class="centered_full">
+														<img src="images/interp_inputs/H1.JPG" width="70%">
+														<img src="images/interp_inputs/H2.JPG" width="70%">
+														<img src="images/interp_inputs/H3.JPG" width="70%">
+													</figure>
+												</div>
+											</div>
+
+
+											<h3>Vertical Interpolation: </h3>
+											<div class="row">
+												<div class="9u 12u(mobile)">
+													<video class="centered_half_large">
+													  <source src="videos/InterpV_Gopro3.mov" >
+													</video>
+												</div>
+												<div class="3u 12u(mobile)">
+													<h5>Input Views:</h5>
+													<figure class="centered_full">
+														<img src="images/interp_inputs/V1.JPG" width="70%">
+														<img src="images/interp_inputs/V2.JPG" width="70%">
+													</figure>
+												</div>
+												
+											</div>
+											
+											<div class="row">
+												<div class="9u 12u(mobile)">
+													<h3>Rendered from a Lytro Image Using a Single Pattern:</h3>
+													<figure >
+														<video  controls class = "centered_half_large">
+															<source src="videos/lytro_align_back_bf7.mp4" type="video/mp4">
+														  <source src="videos/lytro_align_back_bf7.mov" >
+														  <source src="videos/lytro_align_back_bf7.avi" type="video/avi">
+														</video>
+													</figure>
+												</div>
+											</div>
+											<div class="row">
+												<div class="9u 12u(mobile)">
+													<h3>Rendered from an iPhone Video changing to different perspctives frame-by-frame:</h3>
+													<figure>
+														<video  controls class="centered_half_large">
+															<source src="videos/Iphone-multi-perspective_bf7.mp4" type="video/mp4">
+														  <source src="videos/Iphone-multi-perspective_bf7.mov" >
+														  <source src="videos/Iphone-multi-perspective_bf7.avi" type="video/avi">
+														</video>
+													</figure>
+												</div>
+											</div>
+											<div class="row">
+												<h3>Rendered from Water Pouring Video shot by iPhone frame-by-frame:</h3>
+												<div class="9u 12u(mobile)">
+													<figure >
+														<video  controls style="centered_half_large">
+															<source src="videos/water_pouring_noPostP.mp4" type="video/mp4">
+														  <source src="videos/water_pouring_noPostP.mov" >
+														  <source src="videos/water_pouring_noPostP.avi" type="video/avi">
+														</video>
+													</figure>
+												</div>
+												<div class="3u 12u(mobile)">
+													
+												</div>
+											</div>
+											
+										</div>
+									</section>
+
+
+								<!-- Features -->
+									<section class="box features">
+										<h2 class="major"><span>Images</span></h2>
+										<div>
+											<h3>Rendered from Single DSLR Images:</h3>
+											<div class="row">
+												<div class="6u 12u(mobile)">
+													<!-- Feature -->
+														<section class="box feature">
+															<a href="#" class="image featured"><img src="images/experiments/DSLR-result1.png" alt="" /></a>
+														</section>
+
+												</div>
+												<div class="6u 12u(mobile)">
+												<!-- Feature -->
+													<section class="box feature">
+														<a href="#" class="image featured"><img src="images/experiments/DSLR-result2.png" alt="" /></a>
+													</section>
+												</div>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<!-- Footer -->
+				<footer id="footer" class="container">
+					<div class="row 200%">
+						<div class="12u">
+
+							<!-- Contact -->
+								<section>
+									<h2 class="major"><span>Get in touch</span></h2>
+									<ul class="contact">
+										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
+										<li><a class="icon fa-twitter" href="#"><span class="label">Twitter</span></a></li>
+										<li><a class="icon fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
+										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+									</ul>
+								</section>
+
+						</div>
+					</div>
+
+					<!-- Copyright -->
+						<div id="copyright">
+							<ul class="menu">
+								<li>&copy; UW. All rights reserved</li>
+							</ul>
+						</div>
+
+				</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+        $("document").ready(function() {
+            $('#lytro').load('lytro.html');
+        });
+    </script>
+
+	</body>
+</html>
